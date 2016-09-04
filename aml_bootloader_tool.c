@@ -168,7 +168,7 @@ int main(int argc, char *argv[])
 		exit(-1);
 	}
 	
-    fseek (fd, 0, SEEK_END);
+	fseek (fd, 0, SEEK_END);
 	fd_size = ftell(fd);
 	if (fd_size < sizeof(fip_toc_table_t)) {
 		printf("Error: input file too small to read header!\n");
